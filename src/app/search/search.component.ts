@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GetUserService } from '../get-user.service';
+import { User } from '../user';
+import { Repository } from '../repository';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -11,11 +13,17 @@ export class SearchComponent implements OnInit {
 
   public userQuery!: string
   public userProfile!: any
+  public userRepositories!:any
 
   searchUser(userQuery:any){
     this.getUserService.getUserData(this.userQuery).subscribe(userData=>{
       this.userProfile = userData
       console.log(this.userProfile)
+    })
+
+    this.getUserService.getUserRepos(this.userQuery).subscribe(userData=>{
+      this.userRepositories = userData
+      console.log(this.userRepositories)
     })
   }
 
