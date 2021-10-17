@@ -1,0 +1,32 @@
+.base {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #38A3A5;
+
+    nav {
+        background-color: transparent;
+        display: flex;
+        padding: .5rem 5rem;
+
+        a {
+            color: black;
+        }
+    }
+
+    .overlay {
+        background-color: rgba(251, 255, 255, 0.514);
+        height: 620px;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 28px;
+        text-align: center;
+        display: flex;
+
+        box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);   
+
+        
+    }
+
+}
