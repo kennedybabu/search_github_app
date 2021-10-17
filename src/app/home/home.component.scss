@@ -1,11 +1,12 @@
 .base {
-    max-height: 100vh;
+    min-height: 100vh;
     max-width: 100vw;
+    background-color: #38A3A5;
 
     nav {
         background-color: transparent;
         display: flex;
-        padding: 0 5rem;
+        padding: .5rem 5rem;
 
         a {
             color: black;
@@ -13,11 +14,55 @@
     }
 
     .overlay {
-        background-color: aqua;
-        height: 600px;
+        background-color: rgba(251, 255, 255, 0.514);
+        height: 620px;
         width: 90%;
         margin: 0 auto;
         border-radius: 28px;
+        text-align: center;
+        display: flex;
+
+        box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);
+
+
+        .text {
+            flex: 1;
+            border-radius: 28px 0 0 28px;
+            display: flex;
+            // flex-direction: column;
+            text-align: left;
+            align-items: center;
+            padding-left: 2rem;
+
+            h3 {
+                font-size: 32px;
+            }
+
+            a {
+                text-decoration: none;
+                height: 50;
+                width: 158;
+                background-color: #011627;
+                padding: .5rem 1rem;
+                color: whitesmoke;
+            }
+        }
+
+        .img {
+            flex: 1;
+            background-color: royalblue;
+            border-radius: 0 28px 28px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background-image: url(https://blush.design/api/download?shareUri=RsKyVeevf&bg=38a3a5&w=800&h=800&fm=png);
+            // background-size: contain;
+            // background-repeat: no-repeat;
+
+           
+        }
     }
 
 }
