@@ -6,8 +6,8 @@
         </button>
         <div class="collapse navbar-collapse ml-auto offset-md-4" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto offset-md-4">
-            <a class="nav-item nav-link active" href="#">Home</a>
-            <a class="nav-item nav-link" href="#">Search</a>
+            <a class="nav-item nav-link active" routerLink="/home">Home</a>
+            <a class="nav-item nav-link" routerLink="/search">Search</a>
             <a class="nav-item nav-link" href="#">About</a>
           </div>
         </div>
@@ -28,12 +28,16 @@
        
     </div>
     <div class="container info">
-      <div class="user-info">
-        <app-user-profile [userProfile]="userProfile"></app-user-profile>
+      <div class="user-info row">
+        <div class="col">
+          <app-user-profile [userProfile]="userProfile"></app-user-profile>
+        </div>
       </div>  
   
-      <div class="user-repos">
-        <app-user-repos [userRepositories]="userRepositories"></app-user-repos>
+      <div class="user-repos row">
+        <div class="col">
+          <app-user-repos [userRepositories]="userRepositories"></app-user-repos>
+        </div>
       </div>
   
     </div>

@@ -2,6 +2,7 @@
     min-height: 100vh;
     max-width: 100vw;
     background-color: #38A3A5;
+    overflow: hidden;    
 
     nav {
         background-color: transparent;
@@ -24,8 +25,7 @@
 
         box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);
 -webkit-box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);  
-
+-moz-box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75); 
         
     }
 
@@ -70,13 +70,15 @@
     .container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
 
         .user-info {
-            padding-right: 1rem;
+            padding-right: 1rem;           
         }
 
         .user-repos {
             padding-left: 1rem;
+            margin-top: 1rem;
         }
     }
 
