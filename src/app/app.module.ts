@@ -8,7 +8,8 @@ import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { UserReposComponent } from './user-repos/user-repos.component'
+import { UserReposComponent } from './user-repos/user-repos.component';
+import { ErrorComponent } from './error/error.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UserReposComponent } from './user-repos/user-repos.component'
     HomeComponent,
     SearchComponent,
     UserProfileComponent,
-    UserReposComponent
+    UserReposComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
