@@ -24,9 +24,47 @@
 
         box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);
 -webkit-box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);   
+-moz-box-shadow: 1px 4px 15px -6px rgba(0,0,0,0.75);  
 
         
+    }
+
+
+    #container {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .bar {
+            width: 70%;
+            height: 150px;
+            margin: 0 auto;
+            background-image: url(https://blush.design/api/download?shareUri=46QoGCwxBcI8iSjJ&bg=38a3a5&w=800&h=800&fm=png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+
+        .search-bar {
+            width: 60%;
+            height: 60px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            input {
+                border-radius: 15px;
+            }
+
+            button {
+                border-radius: 15px;
+            }
+
+        }
+
     }
 
 }
