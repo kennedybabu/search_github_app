@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
+
+
+  public userQuery!: string
+
+  searchUser(userQuery:any){
+    console.log(userQuery)
+  }
+
   constructor() { }
 
   ngOnInit(): void {
