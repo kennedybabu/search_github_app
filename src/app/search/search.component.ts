@@ -11,6 +11,8 @@ export class SearchComponent implements OnInit {
 
 
 
+  user = new User("", "", "", "", 0, 0)
+  
   public userQuery!: string
   public userProfile!: any
   public userRepositories!:any
