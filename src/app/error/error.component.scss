@@ -1,0 +1,15 @@
+.base {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #38A3A5;
+    align-items: center;
+
+    .message {
+        margin: 0 auto;
+
+        img {
+            height: 200px;
+            width: auto;
+        }
+    }
+}
