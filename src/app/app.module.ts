@@ -13,6 +13,7 @@ import { ErrorComponent } from './error/error.component';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { AboutComponent } from './about/about.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AboutComponent } from './about/about.component';
     UserProfileComponent,
     UserReposComponent,
     ErrorComponent,
-    AboutComponent
+    AboutComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

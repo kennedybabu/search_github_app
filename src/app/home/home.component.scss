@@ -1,11 +1,7 @@
 .base {
     min-height: 100vh;
     max-width: 100vw;
-    background-color: #38A3A5;
-
-    .nav-link {
-        color: #FFB703;
-    }
+    background-color: #38A3A5;    
 
     nav {
         background-color: transparent;
@@ -13,9 +9,8 @@
         padding: .5rem 5rem;
 
         a {
-            color: black;
-
-            
+            color: #242527;            
+          
         }
     }
 
@@ -67,15 +62,29 @@
             justify-content: center; 
             background-image: url(https://blush.design/api/download?shareUri=RsKyVeevf&bg=82eef1&w=800&h=800&fm=png);
             background-size: cover;
+            background-position: bottom;
 
             
             img {
                 height: auto;
                 width: auto;
+                background-size: contain;
             }
 
            
         }
     }
 
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    .base {
+         background-color: #FFB703;
+    }  
+
+    .img {
+        display: none;
+    }
 }
