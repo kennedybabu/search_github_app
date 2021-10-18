@@ -4,6 +4,9 @@ Saka is an apllication that lets a user search for user in the github repository
 ## Technologies Used
 HTML, SCSS and Bootstrap, Javascript and Typescript, Angular Framework.
 
+## Design 
+https://www.figma.com/file/acdFMZ1051cx1m7W2nIsyc/Github_Search?node-id=1%3A2
+
 #### Setup Instructions and Installation
 copy the provided link on Github to a browser of your choice. Ensure you have internet accesss to interact with the application.
 
