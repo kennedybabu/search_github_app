@@ -21,7 +21,7 @@
         <div class="search-bar">
             <form class="form-inline" (submit)="searchUser(userQuery)">
                 <label class="sr-only" for="inlineFormInputName2">Name</label>
-                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="John Doe" [(ngModel)]="userQuery" name="userQuery" required>   
+                <input type="text" class="form-control mb-2 mr-sm-2" id="userQuery" placeholder="John Doe" [(ngModel)]="userQuery" name="userQuery" required>   
 
                 <button type="submit" class="btn btn-primary mb-2">Search</button>
               </form>
